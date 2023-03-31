@@ -36,6 +36,10 @@ numBtn.forEach(button => {
 const operationBtn = document.querySelectorAll(".operation-btn")
 operationBtn.forEach(button => {
     button.addEventListener('click', () => {
+        if (operation != '0'){
+            secondNumber = display.textContent.split(' ')[2]
+            display.textContent = operate(firstNumber, secondNumber, operation)
+        }
         firstNumber = display.textContent
         operation = button.textContent
         display.textContent += ` ${operation} `
@@ -48,3 +52,13 @@ enter.addEventListener('click', () => {
     display.textContent = operate(firstNumber, secondNumber, operation)
 })
 
+const clear = document.querySelector('.clear')
+clear.addEventListener('click', () => {
+    display.textContent = ''
+    operation = '0'
+})
+
+const back = document.querySelector('.back')
+back.addEventListener('click', () => {
+    display.textContent = display.textContent.slice(0, -1)
+})

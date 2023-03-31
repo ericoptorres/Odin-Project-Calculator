@@ -7,7 +7,7 @@ body{
 }
 
 .container{
-    background-color: rgb(150, 190, 215);
+    background-color: rgb(181, 200, 211);
 }
 
 button{
@@ -76,4 +76,10 @@ button{
     margin: 0 5px;
 }
 
+.num-btn{
+    background-color: rgba(132, 165, 165, 0.426);
+}
 
+.operation-btn{
+    background-color: rgb(204, 180, 22);
+}
