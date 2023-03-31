@@ -48,6 +48,10 @@ button{
     background-color: lightgray;
     margin: 0 5px;
     border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
     
 }
 
